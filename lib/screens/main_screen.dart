@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:fashion_app/config/kinetic_theme.dart';
-import 'package:fashion_app/screens/kinetic_home_screen.dart';
-import 'package:fashion_app/screens/kinetic_collection_screen.dart';
+import 'package:fashion_app/screens/home_screen.dart';
+import 'package:fashion_app/screens/collection_screen.dart';
 
-/// KINETIC Main Screen with Navigation
+/// Main Screen with Navigation
 /// Features: Bottom navigation bar, screen switching, premium styling
-class KineticMainScreen extends StatefulWidget {
-  const KineticMainScreen({Key? key}) : super(key: key);
+class MainScreen extends StatefulWidget {
+  const MainScreen({Key? key}) : super(key: key);
 
   @override
-  State<KineticMainScreen> createState() => _KineticMainScreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _KineticMainScreenState extends State<KineticMainScreen> {
+class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _screens = [
-    const KineticHomeScreen(),
-    const KineticCollectionScreen(),
+    const HomeScreen(),
+    const CollectionScreen(),
     const _WishlistScreen(),
     const _AccountScreen(),
   ];

@@ -4,15 +4,15 @@ import 'package:fashion_app/config/kinetic_theme.dart';
 
 /// KINETIC Collection Screen
 /// Features: Product grid, filters, neubrutalism styling, search
-class KineticCollectionScreen extends StatefulWidget {
-  const KineticCollectionScreen({Key? key}) : super(key: key);
+class CollectionScreen extends StatefulWidget {
+  const CollectionScreen({Key? key}) : super(key: key);
 
   @override
-  State<KineticCollectionScreen> createState() =>
-      _KineticCollectionScreenState();
+  State<CollectionScreen> createState() =>
+      _CollectionScreenState();
 }
 
-class _KineticCollectionScreenState extends State<KineticCollectionScreen> {
+class _CollectionScreenState extends State<CollectionScreen> {
   final _searchController = TextEditingController();
   String _selectedCategory = 'All';
   String _selectedSort = 'Latest';

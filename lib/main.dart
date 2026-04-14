@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fashion_app/config/kinetic_theme.dart';
-import 'package:fashion_app/screens/kinetic_main_screen.dart';
+import 'package:fashion_app/screens/main_screen.dart';
 
 void main() {
   runApp(const KineticFashionApp());
@@ -17,7 +17,7 @@ class KineticFashionApp extends StatelessWidget {
       theme: KineticTheme.getLightTheme(),
       darkTheme: KineticTheme.getDarkTheme(),
       themeMode: ThemeMode.light,
-      home: const KineticMainScreen(),
+      home: const MainScreen(),
     );
   }
 }

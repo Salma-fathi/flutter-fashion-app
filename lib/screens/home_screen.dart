@@ -4,14 +4,14 @@ import 'package:fashion_app/config/kinetic_theme.dart';
 
 /// KINETIC Premium Home Screen
 /// Features: Hero section with 4D product showcase, glassmorphism, neubrutalism styling
-class KineticHomeScreen extends StatefulWidget {
-  const KineticHomeScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<KineticHomeScreen> createState() => _KineticHomeScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _KineticHomeScreenState extends State<KineticHomeScreen>
+class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   late AnimationController _floatingController;
   late Animation<double> _floatingAnimation;

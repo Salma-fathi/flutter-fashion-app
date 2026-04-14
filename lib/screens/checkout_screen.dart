@@ -4,14 +4,14 @@ import 'package:fashion_app/config/kinetic_theme.dart';
 
 /// KINETIC Checkout Screen
 /// Features: Step progress, order summary, payment form, neubrutalism styling
-class KineticCheckoutScreen extends StatefulWidget {
-  const KineticCheckoutScreen({Key? key}) : super(key: key);
+class CheckoutScreen extends StatefulWidget {
+  const CheckoutScreen({Key? key}) : super(key: key);
 
   @override
-  State<KineticCheckoutScreen> createState() => _KineticCheckoutScreenState();
+  State<CheckoutScreen> createState() => _CheckoutScreenState();
 }
 
-class _KineticCheckoutScreenState extends State<KineticCheckoutScreen> {
+class _CheckoutScreenState extends State<CheckoutScreen> {
   int _currentStep = 0;
   final _formKey = GlobalKey<FormState>();
 
